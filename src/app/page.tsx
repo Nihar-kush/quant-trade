@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="md:h-screen flex flex-col bg-[#0D0D0D] text-white">
-      {/* Header with QuantTrade Logo */}
       <header className="p-6 text-center">
         <h1 className="text-4xl font-bold text-[#27FFBD] tracking-wide">
           <span className="text-white">Quant</span>Trade
@@ -14,16 +14,16 @@ export default function Home() {
         </p>
       </header>
 
-      {/* Split Screen Section */}
       <div className="flex flex-1 flex-col md:flex-row">
         {/* Client Section */}
         <div className="flex-1 flex flex-col items-center justify-center p-8 md:border-r border-[#1E1E1E]">
           <div className="max-w-md text-center">
-            {/* Replace with your illustration */}
-            <img
+            <Image
               src="/client.svg"
               alt="Client Illustration"
-              className="w-60 mb-6 mx-auto"
+              width={240}
+              height={240}
+              className="mb-6 mx-auto"
             />
             <h2 className="text-3xl font-semibold text-white mb-4">
               I'm a Client
@@ -43,11 +43,12 @@ export default function Home() {
         {/* Manager Section */}
         <div className="flex-1 flex flex-col items-center justify-center p-8">
           <div className="max-w-md text-center">
-            {/* Replace with your illustration */}
-            <img
+            <Image
               src="/manager.svg"
               alt="Manager Illustration"
-              className="w-60 mb-6 mx-auto"
+              width={240}
+              height={240}
+              className="mb-6 mx-auto"
             />
             <h2 className="text-3xl font-semibold text-white mb-4">
               I'm a Manager

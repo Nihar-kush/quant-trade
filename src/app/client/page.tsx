@@ -51,7 +51,6 @@ export default function ClientPage() {
   useWebSocketConnection();
 
   const [orderType, setOrderType] = useState<Order["type"]>("buy");
-  const [price, setPrice] = useState<number>(0);
 
   const activeOrders = orders.filter((order) => order.status === "active");
 
