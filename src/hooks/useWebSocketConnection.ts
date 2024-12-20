@@ -19,7 +19,7 @@ export function useWebSocketConnection() {
   useEffect(() => {
     if (lastJsonMessage) {
       const { p: price } = lastJsonMessage as WebSocketMessage;
-      store.seyLivePrice(parseFloat(price));
+      store.setLivePrice(parseFloat(price));
     }
   }, [lastJsonMessage]);
 

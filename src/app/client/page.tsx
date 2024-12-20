@@ -200,7 +200,9 @@ export default function ClientPage() {
                           onChange={(e) => {
                             const newQuantity = parseFloat(e.target.value);
                             field.onChange(newQuantity);
-                            newQuantity > 0 && updatePrice(newQuantity);
+                            if (newQuantity > 0) {
+                              updatePrice(newQuantity);
+                            }
                           }}
                         />
                       </FormControl>

@@ -26,7 +26,7 @@ export default function Home() {
               className="mb-6 mx-auto"
             />
             <h2 className="text-3xl font-semibold text-white mb-4">
-              I'm a Client
+              Client
             </h2>
             <p className="text-gray-400">
               Manage your trades, place new orders, and track real-time market
@@ -34,7 +34,7 @@ export default function Home() {
             </p>
             <Link href="/client">
               <Button className="mt-6 w-full bg-[#27FFBD] text-black hover:bg-[#1FCCA0] hover:text-white transition">
-                Go to Client Interface
+                Go to Client Dashboard
               </Button>
             </Link>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
               className="mb-6 mx-auto"
             />
             <h2 className="text-3xl font-semibold text-white mb-4">
-              I'm a Manager
+              Manager
             </h2>
             <p className="text-gray-400">
               Approve, modify, and settle trades seamlessly from a unified
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
             <Link href="/manager">
               <Button className="mt-6 w-full bg-[#27FFBD] text-black hover:bg-[#1FCCA0] hover:text-white transition">
-                Go to Manager Interface
+                Go to Manager Dashboard
               </Button>
             </Link>
           </div>

@@ -4,7 +4,7 @@ import { create } from "zustand";
 type OrderStore = {
   orders: Order[];
   livePrice?: number;
-  seyLivePrice: (price: number) => void;
+  setLivePrice: (price: number) => void;
   addOrder: (order: Order) => void;
   updateOrder: (id: string, updates: Partial<Order>) => void;
   removeOrder: (id: string) => void;
@@ -13,7 +13,7 @@ type OrderStore = {
 export const useOrderStore = create<OrderStore>((set) => ({
   orders: [],
   livePrice: undefined,
-  seyLivePrice: (price) => set((state) => ({ livePrice: price })),
+  setLivePrice: (price) => set(({ livePrice: price })),
   addOrder: (order) => set((state) => ({ orders: [...state.orders, order] })),
   updateOrder: (id, updates) =>
     set((state) => ({
